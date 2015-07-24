@@ -21,4 +21,4 @@ class ExecuteOnSaveCommand(sublime_plugin.TextCommand):
 
         for filter, execute in filter_execute:
             if re.search(filter, view.file_name()):
-                view.window().run_command("exec", {"cmd": execute})
+                view.window().run_command("exec", {"cmd": sublime.expand_variables(execute,view.window().extract_variables())})
