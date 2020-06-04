@@ -1,3 +1,5 @@
+# THIS REPO IS ARCHIVED
+
 ExecuteOnSave Sublime Text 2 Plugin
 ===================================
 
